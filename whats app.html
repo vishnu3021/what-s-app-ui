@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .md{
+            border: 3px solid black;
+            height: 97vh;
+            width: 99vw;
+            /* overflow-y: scroll; */
+        }
+        .top{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            flex-direction: start;
+            background-color: green;
+
+        }
+        .left{
+            border: 1px solid red;
+            height: 94vh;
+            width: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            /* align-items: flex-end; */
+            align-content: flex-end;
+            row-gap: 6px;
+            background-color: green;
+        }
+        .m{
+            border-radius: 20%;
+            height: 40px;
+            width: 40px;
+            margin-left: 3px;
+        }
+       
+        .dp{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .chat{
+            border: 3px solid black;
+            height: 700px;
+            width: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 50px;
+            margin-top: -700px;
+            /* overflow-y: scroll; */
+          
+        }
+        .heading{
+            height: 55px;
+            width: 400px;
+            font-size: 30px;
+            background-color: black;
+            color: green;
+            margin-top: 0px;
+        }
+        .search{
+            position: relative;
+            margin-top: -360px;
+            width: 90px;
+            size: 10px;
+            
+        }
+        .contact{
+            border: 3px solid red;
+            height: 640px;
+            width: 372px;
+            margin-left: 50px;
+            margin-top: -648px;
+            padding-left: 30px; 
+            overflow-y: scroll;
+        }
+        .im{
+            height: 45px;
+            width: 40px;
+            border-radius: 100%;
+            margin-left: -30px;
+            border: 2px solid;
+            
+        }
+        /* .my{
+            margin-top: -30px;
+            margin-left: 20px;
+            text-decoration: none;
+            color: white;
+        } */
+        .nu{
+            position: relative;
+            text-decoration: none;
+            top: -50px;
+            left: 30px;
+            color: black;
+
+        }
+        .frame{
+            position: relative;
+            border: 3px solid green;
+            /* margin-top: -112px;
+            margin-left: 370px; */
+            top: -709px;
+            left: 460px;
+            height: 700px;
+            width: 69vw;
+            background-color: gray;
+        }
+        .m{
+            position: relative;
+            border: 2px ;
+            border-radius: 0%;
+            height: 30px;
+            width: 50vw;
+            top: 3px;
+        }
+        .im1{
+            position: relative;
+            border-radius: 100%;
+            height: 50px;
+            width: 50px;
+            top: -30px;
+            left: -20px;
+            border: 2px solid;
+        }
+        .n2{
+            position: relative;
+            top: -90px;
+            left: 39px;
+            text-decoration: none;
+            /* text-decoration: none; */
+            color: black;
+
+
+        }
+        .im3{
+            position: relative;
+            border-radius: 100%;
+            height: 50px;
+            width: 50px;
+            top: -70px;
+            left: -20px;
+            border: 2px solid;
+
+        }
+        .n3{
+            position: relative;
+            top: -119px;
+            left: 50px;
+            text-decoration: none;
+            color: black;
+        }
+        .im4{
+            position: relative;
+            border-radius: 100%;
+            top: -110px;
+            left: -20px;
+            border: 2px solid;
+            height: 50px;
+            width: 50px;
+        }
+        .n4{
+            position: relative;
+            top: -169px;
+            left: 50px;
+            text-decoration: none;
+            color: black;
+        }
+        .im5{
+            position: relative;
+            border-radius: 100%;
+            top: -150px;
+            left: -20px;
+            height: 50px;
+            width: 50px;
+            border: 2px solid;
+        }
+        .n5{
+            position: relative;
+            top: -199px;
+            left: 50px;
+            text-decoration: none;
+            color: black;
+        }
+        .im6{
+            position: relative;
+            border-radius: 100%;
+            top: -150px;
+            left: -20px;
+            height: 50px;
+            width: 50px;
+            border: 2px solid;
+        }
+        .n6{
+            position: relative;
+            top: -210px;
+            left: 50px;
+            text-decoration: none;
+            color: black;
+        }
+        .im7{
+            position: relative;
+            border-radius: 100%;
+            top: -150px;
+            left: -20px;
+            height: 50px;
+            width: 50px;
+            border: 2px solid;
+        }
+        .n7{
+            position: relative;
+            top: -210px;
+            left: 50px;
+            text-decoration: none;
+            color: black;
+
+        }
+        .im8{
+            position: relative;
+            border-radius: 100%;
+            top: -150px;
+            left: -20px;
+            height: 50px;
+            width: 50px;
+            border: 2px solid;
+
+        }
+        .n8{
+            position: relative;
+            top: -210px;
+            left: 50px;
+            text-decoration: none;
+            color: black;
+
+
+        }
+        .n9{
+            position: relative;
+            top: -210px;
+            left: 50px;
+            text-decoration: none;
+            color: black;
+
+        }
+        .n0{
+            position: relative;
+            top: -210px;
+            left: 50px;
+            text-decoration: none;
+            color: black;
+
+        }
+        .n11{
+            position: relative;
+            top: -210px;
+            left: 50px;
+            text-decoration: none;
+            color: black;
+
+        }
+        a:hover{
+            color: blue;
+            background-color: aquamarine;
+        }
+        .c{
+            border-bottom: 3px solid;
+        }
+       
+        
+
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="md">
+        <div class="top"> <img src="./whatsapp.png" height="20px" width="20px" alt=""/>WHAT'S APP</div>
+        <div class="left"><ion-icon name="settings-outline" class="m" title="settings"></ion-icon>
+        <img title="profile" src="./monkey.jpg" class="dp"> 
+        </div>
+        <div class="chat">
+            <p class="heading">Chats</p>
+            <div class="search"><input  type="text" placeholder="🔍 search or new chat here"/></div>
+         </div>
+         <div class="contact">
+            <img src="./monkey.jpg" class="im" height="20px" width="20px"  alt="">
+            <p class="my"><a href="my.html" class="nu" target="my"> NUMBER (YOU)</a></p> 
+            <img src="./monkey.jpg" class="im1" height="20px" width="20px"  alt="">
+            <p ><a href="my.html" class="n2" target="my"> NUMBER (YOU)</a></p> 
+            <img src="./monkey.jpg" class="im3" height="20px" width="20px"  alt="">
+            <p><a href="my.html" class="n3" target="my"> STRANGER</a></p> 
+            <img src="./monkey.jpg" class="im4" height="20px" width="20px"  alt="">
+            <p><a href="my.html" class="n4" target="my"> DADDY</a></p>  
+            <img src="./monkey.jpg" class="im5" height="20px" width="20px"  alt="">
+            <p><a href="my.html" class="n5" target="my"> AMMA</a></p>  
+            <img src="./monkey.jpg" class="im6" height="20px" width="20px"  alt="">
+            <p ><a href="my.html" class="n6" target="my"> BROTHER</a></p>
+            <img src="./monkey.jpg" class="im7" height="20px" width="20px"  alt="">
+            <p ><a href="my.html" class="n7" target="my"> BROTHER2</a></p>
+            <img src="./monkey.jpg" class="im8" height="20px" width="20px"  alt="">
+            <p ><a href="my.html" class="n8" target="my"> VISHNU</a></p>
+            <img src="./monkey.jpg" class="im8" height="20px" width="20px"  alt="">
+            <p><a href="my.html" class="n9" target="my"> G V V R</a></p>
+            <img src="./monkey.jpg" class="im8" height="20px" width="20px"  alt="">
+            <p  class="c"><a href="my.html" class="n0" target="my"> VARDHAN</a></p><br>
+            <img src="./monkey.jpg" class="im8" height="20px" width="20px"  alt="">
+            <p ><a href="my.html" class="n11" target="my">  VISHNU VARDHAN</a></p>
+            
+         </div>
+        
+         
+
+
+    </div>
+    <iframe name="my" height="200px" width="200px" class="frame"></iframe>
+    
+</body>
+</html>
